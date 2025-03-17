@@ -1,13 +1,35 @@
-#include "DecisionTree.h"
-#include <iostream>
+/**
+ * @file DecisionTree.h
+ * @brief Заголовочный файл для класса DecisionTree, который моделирует дерево решений для ИИ игрока.
+ */
 
-void DecisionTree::buildTree() {
-    std::cout << "Создание дерева решений для ИИ..." << std::endl;
-}
-
-std::string DecisionTree::makeDecision() {
-    int choice = rand() % 3;
-    if (choice == 0) return "Атака";
-    if (choice == 1) return "Защита";
-    return "Обманный удар";
-}
+ #include "DecisionTree.h"
+ #include <iostream>
+ 
+ /**
+  * @brief Строит дерево решений для ИИ.
+  *
+  * Эта функция инициирует создание дерева решений для ИИ игрока, 
+  * которое будет использоваться для выбора действий.
+  */
+ void DecisionTree::buildTree() {
+     std::cout << "Создание дерева решений для ИИ..." << std::endl;
+ }
+ 
+ /**
+  * @brief Принимает решение на основе дерева решений.
+  *
+  * Функция случайным образом выбирает одно из трех действий:
+  * - Атака
+  * - Защита
+  * - Обманный удар
+  * 
+  * @return Строка, представляющая выбранное действие.
+  */
+ std::string DecisionTree::makeDecision() {
+     int choice = rand() % 3;
+     if (choice == 0) return "Атака";
+     if (choice == 1) return "Защита";
+     return "Обманный удар";
+ }
+ 

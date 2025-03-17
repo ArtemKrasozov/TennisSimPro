@@ -1,17 +1,52 @@
-#include "Player.h"
-#include <iostream>
+/**
+ * @file Player.h
+ * @brief Заголовочный файл для класса Player, представляющего игрока в игре.
+ */
 
-Player::Player(std::string name) : name(name), score(0) {}
-
-std::string Player::getName() {
-    return name;
-}
-
-void Player::increaseScore(int points) {
-    score += points;
-    std::cout << name << " получает " << points << " очков. Всего: " << score << std::endl;
-}
-
-int Player::getScore() {
-    return score;
-}
+ #include "Player.h"
+ #include <iostream>
+ 
+ /**
+  * @brief Конструктор для создания игрока с заданным именем.
+  * 
+  * Инициализирует игрока с заданным именем и начальным количеством очков (0).
+  * 
+  * @param name Имя игрока.
+  */
+ Player::Player(std::string name) : name(name), score(0) {}
+ 
+ /**
+  * @brief Возвращает имя игрока.
+  * 
+  * Эта функция возвращает имя игрока, которое было задано при его создании.
+  * 
+  * @return Имя игрока.
+  */
+ std::string Player::getName() {
+     return name;
+ }
+ 
+ /**
+  * @brief Увеличивает количество очков игрока.
+  * 
+  * Эта функция увеличивает количество очков игрока на заданное количество очков и выводит
+  * информацию о текущем счете.
+  * 
+  * @param points Количество очков, на которое нужно увеличить счет.
+  */
+ void Player::increaseScore(int points) {
+     score += points;
+     std::cout << name << " получает " << points << " очков. Всего: " << score << std::endl;
+ }
+ 
+ /**
+  * @brief Возвращает текущий счет игрока.
+  * 
+  * Эта функция возвращает количество очков, которые игрок набрал на данный момент.
+  * 
+  * @return Текущий счет игрока.
+  */
+ int Player::getScore() {
+     return score;
+ }
+ 

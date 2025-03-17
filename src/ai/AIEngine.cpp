@@ -3,10 +3,19 @@
 #include <cstdlib>
 #include <ctime>
 
+/**
+ * @brief Конструктор AIEngine. Инициализирует генератор случайных чисел.
+ */
 AIEngine::AIEngine() {
     std::srand(std::time(nullptr));  // Инициализация генератора случайных чисел
 }
 
+/**
+ * @brief Рассчитывает следующий ход ИИ.
+ * 
+ * @param aiPlayer Игрок, управляемый ИИ.
+ * @param opponent Противник.
+ */
 void AIEngine::calculateMove(Player& aiPlayer, Player& opponent) {
     std::cout << "ИИ анализирует ситуацию...\n";
 
@@ -16,6 +25,13 @@ void AIEngine::calculateMove(Player& aiPlayer, Player& opponent) {
     std::cout << "ИИ принимает решение: " << decision << std::endl;
 }
 
+/**
+ * @brief Оценивает уровень риска для текущего состояния игры.
+ * 
+ * @param aiPlayer Игрок, управляемый ИИ.
+ * @param opponent Противник.
+ * @return int Уровень риска (чем выше, тем опаснее ситуация).
+ */
 int AIEngine::evaluateRisk(const Player& aiPlayer, const Player& opponent) {
     int scoreDifference = opponent.getScore() - aiPlayer.getScore();
     int randomFactor = std::rand() % 10;  // Дополнительный случайный фактор для разнообразия поведения
@@ -33,6 +49,12 @@ int AIEngine::evaluateRisk(const Player& aiPlayer, const Player& opponent) {
     return riskLevel;
 }
 
+/**
+ * @brief Принимает стратегическое решение на основе уровня риска.
+ * 
+ * @param riskFactor Уровень риска.
+ * @return std::string Выбранная стратегия.
+ */
 std::string AIEngine::makeStrategicDecision(int riskFactor) {
     if (riskFactor < 5) {
         return aggressivePlay();
@@ -43,6 +65,11 @@ std::string AIEngine::makeStrategicDecision(int riskFactor) {
     }
 }
 
+/**
+ * @brief Выполняет агрессивную стратегию.
+ * 
+ * @return std::string Описание выбранного агрессивного действия.
+ */
 std::string AIEngine::aggressivePlay() {
     int move = std::rand() % 3;
     switch (move) {
@@ -53,6 +80,11 @@ std::string AIEngine::aggressivePlay() {
     return "Агрессивный удар";
 }
 
+/**
+ * @brief Выполняет сбалансированную стратегию.
+ * 
+ * @return std::string Описание выбранного сбалансированного действия.
+ */
 std::string AIEngine::balancedPlay() {
     int move = std::rand() % 3;
     switch (move) {
@@ -63,6 +95,11 @@ std::string AIEngine::balancedPlay() {
     return "Сбалансированная стратегия";
 }
 
+/**
+ * @brief Выполняет оборонительную стратегию.
+ * 
+ * @return std::string Описание выбранного оборонительного действия.
+ */
 std::string AIEngine::defensivePlay() {
     int move = std::rand() % 3;
     switch (move) {
@@ -73,6 +110,13 @@ std::string AIEngine::defensivePlay() {
     return "Оборонительная тактика";
 }
 
+/**
+ * @brief Прогнозирует исход игры на основе текущего состояния игроков.
+ * 
+ * @param aiPlayer Игрок, управляемый ИИ.
+ * @param opponent Противник.
+ * @return int 1 - победа, 0 - поражение.
+ */
 int AIEngine::predictOutcome(const Player& aiPlayer, const Player& opponent) {
     int aiSkill = std::rand() % 100 + aiPlayer.getScore();
     int opponentSkill = std::rand() % 100 + opponent.getScore();
