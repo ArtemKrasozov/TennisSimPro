@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="ru">
+  <compounddef id="dir_128a93aeeff33a8423f079f46929dbb3" kind="dir">
+    <compoundname>src/ai</compoundname>
+    <innerfile refid="_a_i_engine_8cpp">AIEngine.cpp</innerfile>
+    <innerfile refid="_a_i_engine_8h">AIEngine.h</innerfile>
+    <innerfile refid="_a_i_player_8cpp">AIPlayer.cpp</innerfile>
+    <innerfile refid="_a_i_player_8h">AIPlayer.h</innerfile>
+    <innerfile refid="_decision_tree_8cpp">DecisionTree.cpp</innerfile>
+    <innerfile refid="_decision_tree_8h">DecisionTree.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ai/"/>
+  </compounddef>
+</doxygen>

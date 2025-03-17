@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="ru">
+  <compounddef id="_h_u_d_8cpp" kind="file" language="C++">
+    <compoundname>HUD.cpp</compoundname>
+    <includes refid="_h_u_d_8h" local="yes">HUD.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">iomanip</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/ui/HUD.cpp</label>
+        <link refid="_h_u_d_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>HUD.h</label>
+        <link refid="_h_u_d_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>iomanip</label>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/>#include<sp/>&quot;<ref refid="_h_u_d_8h" kindref="compound">HUD.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/>#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/>#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><ref refid="class_h_u_d_1a568b8ee1591f9ba3ed36ae05966f6b56" kindref="member">HUD::HUD</ref>()<sp/>:<sp/>gameTime(0),<sp/>player1Score(0),<sp/>player2Score(0),<sp/>player1(nullptr),<sp/>player2(nullptr)<sp/>{}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_h_u_d_1ad47d55a13d2f9fdf3bfc1e5e785bfff0" kindref="member">HUD::setPlayer1</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_player" kindref="compound">Player</ref>*<sp/>player)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>player1<sp/>=<sp/>player;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_h_u_d_1ae326f593943dc73e40b7a8717f049fc6" kindref="member">HUD::setPlayer2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_player" kindref="compound">Player</ref>*<sp/>player)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>player2<sp/>=<sp/>player;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_h_u_d_1a89821cafc5ef7e37b1ef9f69c8ae0302" kindref="member">HUD::update</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>elapsedTime)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>gameTime<sp/>+=<sp/>elapsedTime;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_h_u_d_1adf77748619e66018c4f10e792bd733e5" kindref="member">updateScore</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_h_u_d_1a489a9c8cb61422fa5f3256346e3fb3a9" kindref="member">HUD::resetTimer</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>gameTime<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_h_u_d_1adf77748619e66018c4f10e792bd733e5" kindref="member">HUD::updateScore</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(player1<sp/>&amp;&amp;<sp/>player2)<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player1Score<sp/>=<sp/>player1-&gt;getScore();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player2Score<sp/>=<sp/>player2-&gt;getScore();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_h_u_d_1ab2ccaa3caebde4b00974082f7c97a995" kindref="member">HUD::display</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;===<sp/>HUD<sp/>===\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Время<sp/>игры:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>gameTime<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>секунд\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Игрок<sp/>1:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>player1Score<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>очков\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Игрок<sp/>2:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>player2Score<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>очков\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/></highlight></codeline>
+    </programlisting>
+    <location file="src/ui/HUD.cpp"/>
+  </compounddef>
+</doxygen>

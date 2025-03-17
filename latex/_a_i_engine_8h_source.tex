@@ -1,0 +1,31 @@
+\doxysection{AIEngine.\+h}
+\hypertarget{_a_i_engine_8h_source}{}\label{_a_i_engine_8h_source}\index{src/ai/AIEngine.h@{src/ai/AIEngine.h}}
+\mbox{\hyperlink{_a_i_engine_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ AIENGINE\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ AIENGINE\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_player_8h}{Player.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_a_i_engine_a4ee8459349bb5f9266d779d6ea06dd4c}{AIEngine}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_a_i_engine_a4ee8459349bb5f9266d779d6ea06dd4c}{AIEngine}}();}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_i_engine_af73b1dca60972985a20d048b4e2c25cf}{calculateMove}}(\mbox{\hyperlink{class_player}{Player}}\&\ aiPlayer,\ \mbox{\hyperlink{class_player}{Player}}\&\ opponent);}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_a_i_engine_a3121aac32cc47b1d856dd846869a2677}{predictOutcome}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_player}{Player}}\&\ aiPlayer,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_player}{Player}}\&\ opponent);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ evaluateRisk(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_player}{Player}}\&\ aiPlayer,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_player}{Player}}\&\ opponent);}
+\DoxyCodeLine{00021\ \ \ \ \ std::string\ makeStrategicDecision(\textcolor{keywordtype}{int}\ riskFactor);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ std::string\ aggressivePlay();}
+\DoxyCodeLine{00024\ \ \ \ \ std::string\ balancedPlay();}
+\DoxyCodeLine{00025\ \ \ \ \ std::string\ defensivePlay();}
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

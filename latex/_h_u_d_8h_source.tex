@@ -1,0 +1,38 @@
+\doxysection{HUD.\+h}
+\hypertarget{_h_u_d_8h_source}{}\label{_h_u_d_8h_source}\index{src/ui/HUD.h@{src/ui/HUD.h}}
+\mbox{\hyperlink{_h_u_d_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ HUD\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ HUD\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_player_8h}{Player.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_h_u_d_a568b8ee1591f9ba3ed36ae05966f6b56}{HUD}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{class_h_u_d_a568b8ee1591f9ba3ed36ae05966f6b56}{HUD}}();}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_h_u_d_a89821cafc5ef7e37b1ef9f69c8ae0302}{update}}(\textcolor{keywordtype}{int}\ elapsedTime);}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_h_u_d_ab2ccaa3caebde4b00974082f7c97a995}{display}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_h_u_d_ad47d55a13d2f9fdf3bfc1e5e785bfff0}{setPlayer1}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_player}{Player}}*\ player);}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_h_u_d_ae326f593943dc73e40b7a8717f049fc6}{setPlayer2}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_player}{Player}}*\ player);}
+\DoxyCodeLine{00016\ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_h_u_d_a489a9c8cb61422fa5f3256346e3fb3a9}{resetTimer}}();}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_h_u_d_adf77748619e66018c4f10e792bd733e5}{updateScore}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_h_u_d_ab4980bc038c389b7bfc891945b0b266c}{showMatchStats}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ gameTime;\ \ \textcolor{comment}{//\ Время\ с\ начала\ игры\ (в\ секундах)}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ player1Score;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ player2Score;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_player}{Player}}*\ player1;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_player}{Player}}*\ player2;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ std::string\ formatTime(\textcolor{keywordtype}{int}\ seconds)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

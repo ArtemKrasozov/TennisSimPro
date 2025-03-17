@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="ru">
+  <compounddef id="class_decision_tree" kind="class" language="C++" prot="public">
+    <compoundname>DecisionTree</compoundname>
+    <includes refid="_decision_tree_8h" local="no">DecisionTree.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_decision_tree_1acbb9c9380456b1aea08f3eb7ee8d78a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DecisionTree::buildTree</definition>
+        <argsstring>()</argsstring>
+        <name>buildTree</name>
+        <qualifiedname>DecisionTree::buildTree</qualifiedname>
+        <briefdescription>
+<para>Строит дерево решений для ИИ. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта функция инициирует создание дерева решений для ИИ игрока, которое будет использоваться для выбора действий. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/DecisionTree.h" line="21" column="11" bodyfile="src/ai/DecisionTree.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_decision_tree_1a73413a9a840a2141e18fefa108bb0a98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string DecisionTree::makeDecision</definition>
+        <argsstring>()</argsstring>
+        <name>makeDecision</name>
+        <qualifiedname>DecisionTree::makeDecision</qualifiedname>
+        <briefdescription>
+<para>Принимает решение на основе дерева решений. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Функция случайным образом выбирает одно из трех действий:<itemizedlist>
+<listitem><para>Атака</para>
+</listitem><listitem><para>Защита</para>
+</listitem><listitem><para>Обманный удар</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="return"><para>Строка, представляющая выбранное действие. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/DecisionTree.h" line="33" column="18" bodyfile="src/ai/DecisionTree.cpp" bodystart="29" bodyend="34"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ai/DecisionTree.h" line="13" column="2" bodyfile="src/ai/DecisionTree.h" bodystart="13" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_decision_tree_1acbb9c9380456b1aea08f3eb7ee8d78a8" prot="public" virt="non-virtual"><scope>DecisionTree</scope><name>buildTree</name></member>
+      <member refid="class_decision_tree_1a73413a9a840a2141e18fefa108bb0a98" prot="public" virt="non-virtual"><scope>DecisionTree</scope><name>makeDecision</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

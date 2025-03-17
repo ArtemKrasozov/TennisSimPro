@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="ru">
+  <compounddef id="class_a_i_engine" kind="class" language="C++" prot="public">
+    <compoundname>AIEngine</compoundname>
+    <includes refid="_a_i_engine_8h" local="no">AIEngine.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_i_engine_1a4ee8459349bb5f9266d779d6ea06dd4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AIEngine::AIEngine</definition>
+        <argsstring>()</argsstring>
+        <name>AIEngine</name>
+        <qualifiedname>AIEngine::AIEngine</qualifiedname>
+        <briefdescription>
+<para>Конструктор <ref refid="class_a_i_engine" kindref="compound">AIEngine</ref>. Инициализирует генератор случайных чисел. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/AIEngine.h" line="14" column="5" bodyfile="src/ai/AIEngine.cpp" bodystart="9" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_i_engine_1af73b1dca60972985a20d048b4e2c25cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AIEngine::calculateMove</definition>
+        <argsstring>(Player &amp;aiPlayer, Player &amp;opponent)</argsstring>
+        <name>calculateMove</name>
+        <qualifiedname>AIEngine::calculateMove</qualifiedname>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>aiPlayer</declname>
+        </param>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>opponent</declname>
+        </param>
+        <briefdescription>
+<para>Рассчитывает следующий ход ИИ. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aiPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Игрок, управляемый ИИ. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Противник. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/AIEngine.h" line="16" column="10" bodyfile="src/ai/AIEngine.cpp" bodystart="19" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_i_engine_1a3121aac32cc47b1d856dd846869a2677" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AIEngine::predictOutcome</definition>
+        <argsstring>(const Player &amp;aiPlayer, const Player &amp;opponent)</argsstring>
+        <name>predictOutcome</name>
+        <qualifiedname>AIEngine::predictOutcome</qualifiedname>
+        <param>
+          <type>const <ref refid="class_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>aiPlayer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>opponent</declname>
+        </param>
+        <briefdescription>
+<para>Прогнозирует исход игры на основе текущего состояния игроков. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aiPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Игрок, управляемый ИИ. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Противник. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 1 - победа, 0 - поражение. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/AIEngine.h" line="17" column="9" bodyfile="src/ai/AIEngine.cpp" bodystart="120" bodyend="128"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_a_i_engine_1a4dc2a5fe43ebafa5f0345081c6f3b382" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AIEngine::evaluateRisk</definition>
+        <argsstring>(const Player &amp;aiPlayer, const Player &amp;opponent)</argsstring>
+        <name>evaluateRisk</name>
+        <qualifiedname>AIEngine::evaluateRisk</qualifiedname>
+        <param>
+          <type>const <ref refid="class_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>aiPlayer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>opponent</declname>
+        </param>
+        <briefdescription>
+<para>Оценивает уровень риска для текущего состояния игры. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aiPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Игрок, управляемый ИИ. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Противник. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Уровень риска (чем выше, тем опаснее ситуация). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/AIEngine.h" line="20" column="9" bodyfile="src/ai/AIEngine.cpp" bodystart="35" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_i_engine_1a5e1fc309093c398e334988f296458b9d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string AIEngine::makeStrategicDecision</definition>
+        <argsstring>(int riskFactor)</argsstring>
+        <name>makeStrategicDecision</name>
+        <qualifiedname>AIEngine::makeStrategicDecision</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>riskFactor</declname>
+        </param>
+        <briefdescription>
+<para>Принимает стратегическое решение на основе уровня риска. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>riskFactor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Уровень риска. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string Выбранная стратегия. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/AIEngine.h" line="21" column="17" bodyfile="src/ai/AIEngine.cpp" bodystart="58" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_i_engine_1a6c63062ba63f19c3b480997b9d246862" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string AIEngine::aggressivePlay</definition>
+        <argsstring>()</argsstring>
+        <name>aggressivePlay</name>
+        <qualifiedname>AIEngine::aggressivePlay</qualifiedname>
+        <briefdescription>
+<para>Выполняет агрессивную стратегию. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string Описание выбранного агрессивного действия. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/AIEngine.h" line="23" column="17" bodyfile="src/ai/AIEngine.cpp" bodystart="73" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_i_engine_1ad0104cf84f20be0870ef1d7ecb8c170f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string AIEngine::balancedPlay</definition>
+        <argsstring>()</argsstring>
+        <name>balancedPlay</name>
+        <qualifiedname>AIEngine::balancedPlay</qualifiedname>
+        <briefdescription>
+<para>Выполняет сбалансированную стратегию. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string Описание выбранного сбалансированного действия. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/AIEngine.h" line="24" column="17" bodyfile="src/ai/AIEngine.cpp" bodystart="88" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_i_engine_1a79df850a540c7cddc2b18d7ccde9e48a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string AIEngine::defensivePlay</definition>
+        <argsstring>()</argsstring>
+        <name>defensivePlay</name>
+        <qualifiedname>AIEngine::defensivePlay</qualifiedname>
+        <briefdescription>
+<para>Выполняет оборонительную стратегию. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string Описание выбранного оборонительного действия. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ai/AIEngine.h" line="25" column="17" bodyfile="src/ai/AIEngine.cpp" bodystart="103" bodyend="111"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ai/AIEngine.h" line="12" column="1" bodyfile="src/ai/AIEngine.h" bodystart="12" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_a_i_engine_1a6c63062ba63f19c3b480997b9d246862" prot="private" virt="non-virtual"><scope>AIEngine</scope><name>aggressivePlay</name></member>
+      <member refid="class_a_i_engine_1a4ee8459349bb5f9266d779d6ea06dd4c" prot="public" virt="non-virtual"><scope>AIEngine</scope><name>AIEngine</name></member>
+      <member refid="class_a_i_engine_1ad0104cf84f20be0870ef1d7ecb8c170f" prot="private" virt="non-virtual"><scope>AIEngine</scope><name>balancedPlay</name></member>
+      <member refid="class_a_i_engine_1af73b1dca60972985a20d048b4e2c25cf" prot="public" virt="non-virtual"><scope>AIEngine</scope><name>calculateMove</name></member>
+      <member refid="class_a_i_engine_1a79df850a540c7cddc2b18d7ccde9e48a" prot="private" virt="non-virtual"><scope>AIEngine</scope><name>defensivePlay</name></member>
+      <member refid="class_a_i_engine_1a4dc2a5fe43ebafa5f0345081c6f3b382" prot="private" virt="non-virtual"><scope>AIEngine</scope><name>evaluateRisk</name></member>
+      <member refid="class_a_i_engine_1a5e1fc309093c398e334988f296458b9d" prot="private" virt="non-virtual"><scope>AIEngine</scope><name>makeStrategicDecision</name></member>
+      <member refid="class_a_i_engine_1a3121aac32cc47b1d856dd846869a2677" prot="public" virt="non-virtual"><scope>AIEngine</scope><name>predictOutcome</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

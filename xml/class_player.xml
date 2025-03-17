@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="ru">
+  <compounddef id="class_player" kind="class" language="C++" prot="public">
+    <compoundname>Player</compoundname>
+    <includes refid="_player_8h" local="no">Player.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_1af9c920fabaafdeb7961a645315b521ff" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Player::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>Player::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Player.h" line="14" column="18" bodyfile="src/core/Player.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1ace6abae8d66534ad0a1fd6458f786a6e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::score</definition>
+        <argsstring></argsstring>
+        <name>score</name>
+        <qualifiedname>Player::score</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Player.h" line="15" column="10" bodyfile="src/core/Player.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_1af5aaea393030f959d568c806ca9100ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Player::Player</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>Player</name>
+        <qualifiedname>Player::Player</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор для создания игрока с заданным именем. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Инициализирует игрока с заданным именем и начальным количеством очков (0).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя игрока. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Player.h" line="25" column="6" bodyfile="src/core/Player.cpp" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1af1aa472885d589516f483e26e786600e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Player::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <qualifiedname>Player::getName</qualifiedname>
+        <briefdescription>
+<para>Возвращает имя игрока. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта функция возвращает имя игрока, которое было задано при его создании.</para>
+<para><simplesect kind="return"><para>Имя игрока. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Player.h" line="34" column="18" bodyfile="src/core/Player.cpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a7d5f80769fb082e6466ee3fea69ade94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::increaseScore</definition>
+        <argsstring>(int points)</argsstring>
+        <name>increaseScore</name>
+        <qualifiedname>Player::increaseScore</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>points</declname>
+        </param>
+        <briefdescription>
+<para>Увеличивает количество очков игрока. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта функция увеличивает количество очков игрока на заданное количество очков и выводит информацию о текущем счете.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>points</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество очков, на которое нужно увеличить счет. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Player.h" line="44" column="11" bodyfile="src/core/Player.cpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a97e5447778ae6c384eedc532dcd8431d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Player::getScore</definition>
+        <argsstring>()</argsstring>
+        <name>getScore</name>
+        <qualifiedname>Player::getScore</qualifiedname>
+        <briefdescription>
+<para>Возвращает текущий счет игрока. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта функция возвращает количество очков, которые игрок набрал на данный момент.</para>
+<para><simplesect kind="return"><para>Текущий счет игрока. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Player.h" line="53" column="10" bodyfile="src/core/Player.cpp" bodystart="49" bodyend="51"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/core/Player.h" line="12" column="2" bodyfile="src/core/Player.h" bodystart="12" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_player_1af1aa472885d589516f483e26e786600e" prot="public" virt="non-virtual"><scope>Player</scope><name>getName</name></member>
+      <member refid="class_player_1a97e5447778ae6c384eedc532dcd8431d" prot="public" virt="non-virtual"><scope>Player</scope><name>getScore</name></member>
+      <member refid="class_player_1a7d5f80769fb082e6466ee3fea69ade94" prot="public" virt="non-virtual"><scope>Player</scope><name>increaseScore</name></member>
+      <member refid="class_player_1af9c920fabaafdeb7961a645315b521ff" prot="private" virt="non-virtual"><scope>Player</scope><name>name</name></member>
+      <member refid="class_player_1af5aaea393030f959d568c806ca9100ca" prot="public" virt="non-virtual"><scope>Player</scope><name>Player</name></member>
+      <member refid="class_player_1ace6abae8d66534ad0a1fd6458f786a6e" prot="private" virt="non-virtual"><scope>Player</scope><name>score</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

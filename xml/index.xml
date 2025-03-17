@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.13.2" xml:lang="ru">
+  <compound refid="class_a_i_engine" kind="class"><name>AIEngine</name>
+    <member refid="class_a_i_engine_1a4ee8459349bb5f9266d779d6ea06dd4c" kind="function"><name>AIEngine</name></member>
+    <member refid="class_a_i_engine_1af73b1dca60972985a20d048b4e2c25cf" kind="function"><name>calculateMove</name></member>
+    <member refid="class_a_i_engine_1a3121aac32cc47b1d856dd846869a2677" kind="function"><name>predictOutcome</name></member>
+    <member refid="class_a_i_engine_1a4dc2a5fe43ebafa5f0345081c6f3b382" kind="function"><name>evaluateRisk</name></member>
+    <member refid="class_a_i_engine_1a5e1fc309093c398e334988f296458b9d" kind="function"><name>makeStrategicDecision</name></member>
+    <member refid="class_a_i_engine_1a6c63062ba63f19c3b480997b9d246862" kind="function"><name>aggressivePlay</name></member>
+    <member refid="class_a_i_engine_1ad0104cf84f20be0870ef1d7ecb8c170f" kind="function"><name>balancedPlay</name></member>
+    <member refid="class_a_i_engine_1a79df850a540c7cddc2b18d7ccde9e48a" kind="function"><name>defensivePlay</name></member>
+  </compound>
+  <compound refid="class_a_i_player" kind="class"><name>AIPlayer</name>
+    <member refid="class_a_i_player_1a3aa38571773c3b186f5fa6016b1ebba1" kind="function"><name>makeDecision</name></member>
+  </compound>
+  <compound refid="class_decision_tree" kind="class"><name>DecisionTree</name>
+    <member refid="class_decision_tree_1acbb9c9380456b1aea08f3eb7ee8d78a8" kind="function"><name>buildTree</name></member>
+    <member refid="class_decision_tree_1a73413a9a840a2141e18fefa108bb0a98" kind="function"><name>makeDecision</name></member>
+  </compound>
+  <compound refid="class_h_u_d" kind="class"><name>HUD</name>
+    <member refid="class_h_u_d_1abd74dd4081ee389d601989e3cf023df0" kind="variable"><name>gameTime</name></member>
+    <member refid="class_h_u_d_1a65d01dd53cc7c1827c2898ac4e0b458b" kind="variable"><name>player1Score</name></member>
+    <member refid="class_h_u_d_1a921a467e8a4e0ea432a0dde9c37723dc" kind="variable"><name>player2Score</name></member>
+    <member refid="class_h_u_d_1a7334ae36376950005e9b04b6cded48b9" kind="variable"><name>player1</name></member>
+    <member refid="class_h_u_d_1ae42f2d6ef2ab1665aae980bbd8b3df60" kind="variable"><name>player2</name></member>
+    <member refid="class_h_u_d_1a568b8ee1591f9ba3ed36ae05966f6b56" kind="function"><name>HUD</name></member>
+    <member refid="class_h_u_d_1a89821cafc5ef7e37b1ef9f69c8ae0302" kind="function"><name>update</name></member>
+    <member refid="class_h_u_d_1ab2ccaa3caebde4b00974082f7c97a995" kind="function"><name>display</name></member>
+    <member refid="class_h_u_d_1ad47d55a13d2f9fdf3bfc1e5e785bfff0" kind="function"><name>setPlayer1</name></member>
+    <member refid="class_h_u_d_1ae326f593943dc73e40b7a8717f049fc6" kind="function"><name>setPlayer2</name></member>
+    <member refid="class_h_u_d_1a489a9c8cb61422fa5f3256346e3fb3a9" kind="function"><name>resetTimer</name></member>
+    <member refid="class_h_u_d_1adf77748619e66018c4f10e792bd733e5" kind="function"><name>updateScore</name></member>
+    <member refid="class_h_u_d_1ab4980bc038c389b7bfc891945b0b266c" kind="function"><name>showMatchStats</name></member>
+    <member refid="class_h_u_d_1a0b39247dd6497da07d414d6c51335004" kind="function"><name>formatTime</name></member>
+  </compound>
+  <compound refid="class_main_menu" kind="class"><name>MainMenu</name>
+    <member refid="class_main_menu_1a93e8540dbcd1c621bbe3229203d30e55" kind="function"><name>show</name></member>
+    <member refid="class_main_menu_1a0bea9060c14e6637bd72608f328d2a6d" kind="function"><name>getUserChoice</name></member>
+  </compound>
+  <compound refid="class_match_simulation" kind="class"><name>MatchSimulation</name>
+    <member refid="class_match_simulation_1ac144626ac158c87c44fd8c430cb54cc4" kind="function"><name>simulateMatch</name></member>
+  </compound>
+  <compound refid="class_player" kind="class"><name>Player</name>
+    <member refid="class_player_1af9c920fabaafdeb7961a645315b521ff" kind="variable"><name>name</name></member>
+    <member refid="class_player_1ace6abae8d66534ad0a1fd6458f786a6e" kind="variable"><name>score</name></member>
+    <member refid="class_player_1af5aaea393030f959d568c806ca9100ca" kind="function"><name>Player</name></member>
+    <member refid="class_player_1af1aa472885d589516f483e26e786600e" kind="function"><name>getName</name></member>
+    <member refid="class_player_1a7d5f80769fb082e6466ee3fea69ade94" kind="function"><name>increaseScore</name></member>
+    <member refid="class_player_1a97e5447778ae6c384eedc532dcd8431d" kind="function"><name>getScore</name></member>
+  </compound>
+  <compound refid="class_u_i_manager" kind="class"><name>UIManager</name>
+    <member refid="class_u_i_manager_1afff50c26ae1df27ed5de8d0668bfe8a1" kind="function"><name>render</name></member>
+    <member refid="class_u_i_manager_1a9641ddc93b9ad210fb15bb5bc49cc5d0" kind="function"><name>showMainMenu</name></member>
+  </compound>
+  <compound refid="_a_i_engine_8cpp" kind="file"><name>AIEngine.cpp</name>
+  </compound>
+  <compound refid="_a_i_engine_8h" kind="file"><name>AIEngine.h</name>
+  </compound>
+  <compound refid="_a_i_player_8cpp" kind="file"><name>AIPlayer.cpp</name>
+  </compound>
+  <compound refid="_a_i_player_8h" kind="file"><name>AIPlayer.h</name>
+  </compound>
+  <compound refid="_decision_tree_8cpp" kind="file"><name>DecisionTree.cpp</name>
+  </compound>
+  <compound refid="_decision_tree_8h" kind="file"><name>DecisionTree.h</name>
+  </compound>
+  <compound refid="_game_engine_8cpp" kind="file"><name>GameEngine.cpp</name>
+  </compound>
+  <compound refid="_match_simulation_8cpp" kind="file"><name>MatchSimulation.cpp</name>
+  </compound>
+  <compound refid="_match_simulation_8h" kind="file"><name>MatchSimulation.h</name>
+  </compound>
+  <compound refid="_player_8cpp" kind="file"><name>Player.cpp</name>
+  </compound>
+  <compound refid="_player_8h" kind="file"><name>Player.h</name>
+  </compound>
+  <compound refid="_h_u_d_8cpp" kind="file"><name>HUD.cpp</name>
+  </compound>
+  <compound refid="_h_u_d_8h" kind="file"><name>HUD.h</name>
+  </compound>
+  <compound refid="_main_menu_8cpp" kind="file"><name>MainMenu.cpp</name>
+  </compound>
+  <compound refid="_main_menu_8h" kind="file"><name>MainMenu.h</name>
+  </compound>
+  <compound refid="_u_i_manager_8cpp" kind="file"><name>UIManager.cpp</name>
+  </compound>
+  <compound refid="_u_i_manager_8h" kind="file"><name>UIManager.h</name>
+  </compound>
+  <compound refid="dir_128a93aeeff33a8423f079f46929dbb3" kind="dir"><name>src/ai</name>
+  </compound>
+  <compound refid="dir_aebb8dcc11953d78e620bbef0b9e2183" kind="dir"><name>src/core</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_da5c6b39c0a2f54e57df6799511cd3ab" kind="dir"><name>src/ui</name>
+  </compound>
+</doxygenindex>

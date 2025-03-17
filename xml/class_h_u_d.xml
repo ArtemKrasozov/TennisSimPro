@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="ru">
+  <compounddef id="class_h_u_d" kind="class" language="C++" prot="public">
+    <compoundname>HUD</compoundname>
+    <includes refid="_h_u_d_8h" local="no">HUD.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_h_u_d_1abd74dd4081ee389d601989e3cf023df0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int HUD::gameTime</definition>
+        <argsstring></argsstring>
+        <name>gameTime</name>
+        <qualifiedname>HUD::gameTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/HUD.h" line="22" column="9" bodyfile="src/ui/HUD.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_h_u_d_1a65d01dd53cc7c1827c2898ac4e0b458b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int HUD::player1Score</definition>
+        <argsstring></argsstring>
+        <name>player1Score</name>
+        <qualifiedname>HUD::player1Score</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/HUD.h" line="23" column="9" bodyfile="src/ui/HUD.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_h_u_d_1a921a467e8a4e0ea432a0dde9c37723dc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int HUD::player2Score</definition>
+        <argsstring></argsstring>
+        <name>player2Score</name>
+        <qualifiedname>HUD::player2Score</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/HUD.h" line="24" column="9" bodyfile="src/ui/HUD.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_h_u_d_1a7334ae36376950005e9b04b6cded48b9" prot="private" static="no" mutable="no">
+        <type>const <ref refid="class_player" kindref="compound">Player</ref> *</type>
+        <definition>const Player* HUD::player1</definition>
+        <argsstring></argsstring>
+        <name>player1</name>
+        <qualifiedname>HUD::player1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/HUD.h" line="26" column="18" bodyfile="src/ui/HUD.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_h_u_d_1ae42f2d6ef2ab1665aae980bbd8b3df60" prot="private" static="no" mutable="no">
+        <type>const <ref refid="class_player" kindref="compound">Player</ref> *</type>
+        <definition>const Player* HUD::player2</definition>
+        <argsstring></argsstring>
+        <name>player2</name>
+        <qualifiedname>HUD::player2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/HUD.h" line="27" column="18" bodyfile="src/ui/HUD.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_h_u_d_1a568b8ee1591f9ba3ed36ae05966f6b56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HUD::HUD</definition>
+        <argsstring>()</argsstring>
+        <name>HUD</name>
+        <qualifiedname>HUD::HUD</qualifiedname>
+        <briefdescription>
+<para>Конструктор для инициализации интерфейса <ref refid="class_h_u_d" kindref="compound">HUD</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Инициализирует таймер игры и очки игроков, а также устанавливает указатели на игроков как nullptr. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/HUD.h" line="9" column="5" bodyfile="src/ui/HUD.cpp" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_h_u_d_1a89821cafc5ef7e37b1ef9f69c8ae0302" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HUD::update</definition>
+        <argsstring>(int elapsedTime)</argsstring>
+        <name>update</name>
+        <qualifiedname>HUD::update</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>elapsedTime</declname>
+        </param>
+        <briefdescription>
+<para>Обновляет данные интерфейса на основе прошедшего времени. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта функция увеличивает общее время игры на заданное количество времени и обновляет очки игроков.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>elapsedTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Время, прошедшее с момента последнего обновления, которое будет добавлено к общему времени. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/HUD.h" line="11" column="10" bodyfile="src/ui/HUD.cpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_h_u_d_1ab2ccaa3caebde4b00974082f7c97a995" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HUD::display</definition>
+        <argsstring>() const</argsstring>
+        <name>display</name>
+        <qualifiedname>HUD::display</qualifiedname>
+        <briefdescription>
+<para>Отображает информацию об игре на экране. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта функция выводит текущее время игры и очки игроков на экран. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/HUD.h" line="12" column="10" bodyfile="src/ui/HUD.cpp" bodystart="77" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_h_u_d_1ad47d55a13d2f9fdf3bfc1e5e785bfff0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HUD::setPlayer1</definition>
+        <argsstring>(const Player *player)</argsstring>
+        <name>setPlayer1</name>
+        <qualifiedname>HUD::setPlayer1</qualifiedname>
+        <param>
+          <type>const <ref refid="class_player" kindref="compound">Player</ref> *</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает первого игрока. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта функция позволяет указать первого игрока, чьи очки будут отображаться на интерфейсе.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на объект класса <ref refid="class_player" kindref="compound">Player</ref>, представляющий первого игрока. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/HUD.h" line="14" column="10" bodyfile="src/ui/HUD.cpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_h_u_d_1ae326f593943dc73e40b7a8717f049fc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HUD::setPlayer2</definition>
+        <argsstring>(const Player *player)</argsstring>
+        <name>setPlayer2</name>
+        <qualifiedname>HUD::setPlayer2</qualifiedname>
+        <param>
+          <type>const <ref refid="class_player" kindref="compound">Player</ref> *</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает второго игрока. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта функция позволяет указать второго игрока, чьи очки будут отображаться на интерфейсе.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на объект класса <ref refid="class_player" kindref="compound">Player</ref>, представляющий второго игрока. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/HUD.h" line="15" column="10" bodyfile="src/ui/HUD.cpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_h_u_d_1a489a9c8cb61422fa5f3256346e3fb3a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HUD::resetTimer</definition>
+        <argsstring>()</argsstring>
+        <name>resetTimer</name>
+        <qualifiedname>HUD::resetTimer</qualifiedname>
+        <briefdescription>
+<para>Сбрасывает таймер игры. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта функция сбрасывает таймер игры в начальное состояние (0). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/HUD.h" line="17" column="10" bodyfile="src/ui/HUD.cpp" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_h_u_d_1adf77748619e66018c4f10e792bd733e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HUD::updateScore</definition>
+        <argsstring>()</argsstring>
+        <name>updateScore</name>
+        <qualifiedname>HUD::updateScore</qualifiedname>
+        <briefdescription>
+<para>Обновляет очки игроков. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта функция обновляет очки для обоих игроков, если они были установлены. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/HUD.h" line="18" column="10" bodyfile="src/ui/HUD.cpp" bodystart="65" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_h_u_d_1ab4980bc038c389b7bfc891945b0b266c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HUD::showMatchStats</definition>
+        <argsstring>() const</argsstring>
+        <name>showMatchStats</name>
+        <qualifiedname>HUD::showMatchStats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/HUD.h" line="19" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_h_u_d_1a0b39247dd6497da07d414d6c51335004" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string HUD::formatTime</definition>
+        <argsstring>(int seconds) const</argsstring>
+        <name>formatTime</name>
+        <qualifiedname>HUD::formatTime</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/HUD.h" line="29" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ui/HUD.h" line="7" column="1" bodyfile="src/ui/HUD.h" bodystart="7" bodyend="30"/>
+    <listofallmembers>
+      <member refid="class_h_u_d_1ab2ccaa3caebde4b00974082f7c97a995" prot="public" virt="non-virtual"><scope>HUD</scope><name>display</name></member>
+      <member refid="class_h_u_d_1a0b39247dd6497da07d414d6c51335004" prot="private" virt="non-virtual"><scope>HUD</scope><name>formatTime</name></member>
+      <member refid="class_h_u_d_1abd74dd4081ee389d601989e3cf023df0" prot="private" virt="non-virtual"><scope>HUD</scope><name>gameTime</name></member>
+      <member refid="class_h_u_d_1a568b8ee1591f9ba3ed36ae05966f6b56" prot="public" virt="non-virtual"><scope>HUD</scope><name>HUD</name></member>
+      <member refid="class_h_u_d_1a7334ae36376950005e9b04b6cded48b9" prot="private" virt="non-virtual"><scope>HUD</scope><name>player1</name></member>
+      <member refid="class_h_u_d_1a65d01dd53cc7c1827c2898ac4e0b458b" prot="private" virt="non-virtual"><scope>HUD</scope><name>player1Score</name></member>
+      <member refid="class_h_u_d_1ae42f2d6ef2ab1665aae980bbd8b3df60" prot="private" virt="non-virtual"><scope>HUD</scope><name>player2</name></member>
+      <member refid="class_h_u_d_1a921a467e8a4e0ea432a0dde9c37723dc" prot="private" virt="non-virtual"><scope>HUD</scope><name>player2Score</name></member>
+      <member refid="class_h_u_d_1a489a9c8cb61422fa5f3256346e3fb3a9" prot="public" virt="non-virtual"><scope>HUD</scope><name>resetTimer</name></member>
+      <member refid="class_h_u_d_1ad47d55a13d2f9fdf3bfc1e5e785bfff0" prot="public" virt="non-virtual"><scope>HUD</scope><name>setPlayer1</name></member>
+      <member refid="class_h_u_d_1ae326f593943dc73e40b7a8717f049fc6" prot="public" virt="non-virtual"><scope>HUD</scope><name>setPlayer2</name></member>
+      <member refid="class_h_u_d_1ab4980bc038c389b7bfc891945b0b266c" prot="public" virt="non-virtual"><scope>HUD</scope><name>showMatchStats</name></member>
+      <member refid="class_h_u_d_1a89821cafc5ef7e37b1ef9f69c8ae0302" prot="public" virt="non-virtual"><scope>HUD</scope><name>update</name></member>
+      <member refid="class_h_u_d_1adf77748619e66018c4f10e792bd733e5" prot="public" virt="non-virtual"><scope>HUD</scope><name>updateScore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

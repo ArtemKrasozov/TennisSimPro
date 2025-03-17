@@ -1,0 +1,93 @@
+\doxysection{Класс Player}
+\hypertarget{class_player}{}\label{class_player}\index{Player@{Player}}
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_af5aaea393030f959d568c806ca9100ca}{Player}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Конструктор для создания игрока с заданным именем. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_player_af1aa472885d589516f483e26e786600e}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает имя игрока. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a7d5f80769fb082e6466ee3fea69ade94}{increase\+Score}} (int points)
+\begin{DoxyCompactList}\small\item\em Увеличивает количество очков игрока. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_a97e5447778ae6c384eedc532dcd8431d}{get\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает текущий счет игрока. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_player_af5aaea393030f959d568c806ca9100ca}\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily \label{class_player_af5aaea393030f959d568c806ca9100ca} 
+Player\+::\+Player (\begin{DoxyParamCaption}\item[{std\+::string}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор для создания игрока с заданным именем. 
+
+Инициализирует игрока с заданным именем и начальным количеством очков (0).
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя игрока. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_player_af1aa472885d589516f483e26e786600e}\index{Player@{Player}!getName@{getName}}
+\index{getName@{getName}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_player_af1aa472885d589516f483e26e786600e} 
+std\+::string Player\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Возвращает имя игрока. 
+
+Эта функция возвращает имя игрока, которое было задано при его создании.
+
+\begin{DoxyReturn}{Возвращает}
+Имя игрока. 
+\end{DoxyReturn}
+\Hypertarget{class_player_a97e5447778ae6c384eedc532dcd8431d}\index{Player@{Player}!getScore@{getScore}}
+\index{getScore@{getScore}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily \label{class_player_a97e5447778ae6c384eedc532dcd8431d} 
+int Player\+::get\+Score (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Возвращает текущий счет игрока. 
+
+Эта функция возвращает количество очков, которые игрок набрал на данный момент.
+
+\begin{DoxyReturn}{Возвращает}
+Текущий счет игрока. 
+\end{DoxyReturn}
+\Hypertarget{class_player_a7d5f80769fb082e6466ee3fea69ade94}\index{Player@{Player}!increaseScore@{increaseScore}}
+\index{increaseScore@{increaseScore}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{increaseScore()}{increaseScore()}}
+{\footnotesize\ttfamily \label{class_player_a7d5f80769fb082e6466ee3fea69ade94} 
+void Player\+::increase\+Score (\begin{DoxyParamCaption}\item[{int}]{points}{}\end{DoxyParamCaption})}
+
+
+
+Увеличивает количество очков игрока. 
+
+Эта функция увеличивает количество очков игрока на заданное количество очков и выводит информацию о текущем счете.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em points} & Количество очков, на которое нужно увеличить счет. \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/core/\mbox{\hyperlink{_player_8h}{Player.\+h}}\item 
+src/core/\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

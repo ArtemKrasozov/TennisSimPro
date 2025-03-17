@@ -1,0 +1,74 @@
+\doxysection{Класс AIEngine}
+\hypertarget{class_a_i_engine}{}\label{class_a_i_engine}\index{AIEngine@{AIEngine}}
+
+
+{\ttfamily \#include $<$AIEngine.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_i_engine_a4ee8459349bb5f9266d779d6ea06dd4c}{AIEngine}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор \doxylink{class_a_i_engine}{AIEngine}. Инициализирует генератор случайных чисел. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_i_engine_af73b1dca60972985a20d048b4e2c25cf}{calculate\+Move}} (\mbox{\hyperlink{class_player}{Player}} \&ai\+Player, \mbox{\hyperlink{class_player}{Player}} \&opponent)
+\begin{DoxyCompactList}\small\item\em Рассчитывает следующий ход ИИ. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_a_i_engine_a3121aac32cc47b1d856dd846869a2677}{predict\+Outcome}} (const \mbox{\hyperlink{class_player}{Player}} \&ai\+Player, const \mbox{\hyperlink{class_player}{Player}} \&opponent)
+\begin{DoxyCompactList}\small\item\em Прогнозирует исход игры на основе текущего состояния игроков. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_a_i_engine_a4ee8459349bb5f9266d779d6ea06dd4c}\index{AIEngine@{AIEngine}!AIEngine@{AIEngine}}
+\index{AIEngine@{AIEngine}!AIEngine@{AIEngine}}
+\doxysubsubsection{\texorpdfstring{AIEngine()}{AIEngine()}}
+{\footnotesize\ttfamily \label{class_a_i_engine_a4ee8459349bb5f9266d779d6ea06dd4c} 
+AIEngine\+::\+AIEngine (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор \doxylink{class_a_i_engine}{AIEngine}. Инициализирует генератор случайных чисел. 
+
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_a_i_engine_af73b1dca60972985a20d048b4e2c25cf}\index{AIEngine@{AIEngine}!calculateMove@{calculateMove}}
+\index{calculateMove@{calculateMove}!AIEngine@{AIEngine}}
+\doxysubsubsection{\texorpdfstring{calculateMove()}{calculateMove()}}
+{\footnotesize\ttfamily \label{class_a_i_engine_af73b1dca60972985a20d048b4e2c25cf} 
+void AIEngine\+::calculate\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{ai\+Player}{, }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{opponent}{}\end{DoxyParamCaption})}
+
+
+
+Рассчитывает следующий ход ИИ. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em ai\+Player} & Игрок, управляемый ИИ. \\
+\hline
+{\em opponent} & Противник. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_i_engine_a3121aac32cc47b1d856dd846869a2677}\index{AIEngine@{AIEngine}!predictOutcome@{predictOutcome}}
+\index{predictOutcome@{predictOutcome}!AIEngine@{AIEngine}}
+\doxysubsubsection{\texorpdfstring{predictOutcome()}{predictOutcome()}}
+{\footnotesize\ttfamily \label{class_a_i_engine_a3121aac32cc47b1d856dd846869a2677} 
+int AIEngine\+::predict\+Outcome (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_player}{Player}} \&}]{ai\+Player}{, }\item[{const \mbox{\hyperlink{class_player}{Player}} \&}]{opponent}{}\end{DoxyParamCaption})}
+
+
+
+Прогнозирует исход игры на основе текущего состояния игроков. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em ai\+Player} & Игрок, управляемый ИИ. \\
+\hline
+{\em opponent} & Противник. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+int 1 -\/ победа, 0 -\/ поражение. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/ai/\mbox{\hyperlink{_a_i_engine_8h}{AIEngine.\+h}}\item 
+src/ai/\mbox{\hyperlink{_a_i_engine_8cpp}{AIEngine.\+cpp}}\end{DoxyCompactItemize}

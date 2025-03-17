@@ -1,0 +1,52 @@
+\doxysection{Класс Decision\+Tree}
+\hypertarget{class_decision_tree}{}\label{class_decision_tree}\index{DecisionTree@{DecisionTree}}
+
+
+{\ttfamily \#include $<$Decision\+Tree.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_decision_tree_acbb9c9380456b1aea08f3eb7ee8d78a8}{build\+Tree}} ()
+\begin{DoxyCompactList}\small\item\em Строит дерево решений для ИИ. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_decision_tree_a73413a9a840a2141e18fefa108bb0a98}{make\+Decision}} ()
+\begin{DoxyCompactList}\small\item\em Принимает решение на основе дерева решений. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_decision_tree_acbb9c9380456b1aea08f3eb7ee8d78a8}\index{DecisionTree@{DecisionTree}!buildTree@{buildTree}}
+\index{buildTree@{buildTree}!DecisionTree@{DecisionTree}}
+\doxysubsubsection{\texorpdfstring{buildTree()}{buildTree()}}
+{\footnotesize\ttfamily \label{class_decision_tree_acbb9c9380456b1aea08f3eb7ee8d78a8} 
+void Decision\+Tree\+::build\+Tree (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Строит дерево решений для ИИ. 
+
+Эта функция инициирует создание дерева решений для ИИ игрока, которое будет использоваться для выбора действий. \Hypertarget{class_decision_tree_a73413a9a840a2141e18fefa108bb0a98}\index{DecisionTree@{DecisionTree}!makeDecision@{makeDecision}}
+\index{makeDecision@{makeDecision}!DecisionTree@{DecisionTree}}
+\doxysubsubsection{\texorpdfstring{makeDecision()}{makeDecision()}}
+{\footnotesize\ttfamily \label{class_decision_tree_a73413a9a840a2141e18fefa108bb0a98} 
+std\+::string Decision\+Tree\+::make\+Decision (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Принимает решение на основе дерева решений. 
+
+Функция случайным образом выбирает одно из трех действий\+:
+\begin{DoxyItemize}
+\item Атака
+\item Защита
+\item Обманный удар
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Возвращает}
+Строка, представляющая выбранное действие. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/ai/\mbox{\hyperlink{_decision_tree_8h}{Decision\+Tree.\+h}}\item 
+src/ai/\mbox{\hyperlink{_decision_tree_8cpp}{Decision\+Tree.\+cpp}}\end{DoxyCompactItemize}

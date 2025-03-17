@@ -1,0 +1,134 @@
+\doxysection{Класс HUD}
+\hypertarget{class_h_u_d}{}\label{class_h_u_d}\index{HUD@{HUD}}
+
+
+{\ttfamily \#include $<$HUD.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_h_u_d_a568b8ee1591f9ba3ed36ae05966f6b56}{HUD}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор для инициализации интерфейса \doxylink{class_h_u_d}{HUD}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_h_u_d_a89821cafc5ef7e37b1ef9f69c8ae0302}{update}} (int elapsed\+Time)
+\begin{DoxyCompactList}\small\item\em Обновляет данные интерфейса на основе прошедшего времени. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_h_u_d_ab2ccaa3caebde4b00974082f7c97a995}{display}} () const
+\begin{DoxyCompactList}\small\item\em Отображает информацию об игре на экране. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_h_u_d_ad47d55a13d2f9fdf3bfc1e5e785bfff0}{set\+Player1}} (const \mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}player)
+\begin{DoxyCompactList}\small\item\em Устанавливает первого игрока. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_h_u_d_ae326f593943dc73e40b7a8717f049fc6}{set\+Player2}} (const \mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}player)
+\begin{DoxyCompactList}\small\item\em Устанавливает второго игрока. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_h_u_d_a489a9c8cb61422fa5f3256346e3fb3a9}{reset\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em Сбрасывает таймер игры. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_h_u_d_adf77748619e66018c4f10e792bd733e5}{update\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Обновляет очки игроков. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_h_u_d_ab4980bc038c389b7bfc891945b0b266c}{show\+Match\+Stats}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_h_u_d_a568b8ee1591f9ba3ed36ae05966f6b56}\index{HUD@{HUD}!HUD@{HUD}}
+\index{HUD@{HUD}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{HUD()}{HUD()}}
+{\footnotesize\ttfamily \label{class_h_u_d_a568b8ee1591f9ba3ed36ae05966f6b56} 
+HUD\+::\+HUD (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор для инициализации интерфейса \doxylink{class_h_u_d}{HUD}. 
+
+Инициализирует таймер игры и очки игроков, а также устанавливает указатели на игроков как nullptr. 
+
+\doxysubsection{Методы}
+\Hypertarget{class_h_u_d_ab2ccaa3caebde4b00974082f7c97a995}\index{HUD@{HUD}!display@{display}}
+\index{display@{display}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \label{class_h_u_d_ab2ccaa3caebde4b00974082f7c97a995} 
+void HUD\+::display (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Отображает информацию об игре на экране. 
+
+Эта функция выводит текущее время игры и очки игроков на экран. \Hypertarget{class_h_u_d_a489a9c8cb61422fa5f3256346e3fb3a9}\index{HUD@{HUD}!resetTimer@{resetTimer}}
+\index{resetTimer@{resetTimer}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{resetTimer()}{resetTimer()}}
+{\footnotesize\ttfamily \label{class_h_u_d_a489a9c8cb61422fa5f3256346e3fb3a9} 
+void HUD\+::reset\+Timer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Сбрасывает таймер игры. 
+
+Эта функция сбрасывает таймер игры в начальное состояние (0). \Hypertarget{class_h_u_d_ad47d55a13d2f9fdf3bfc1e5e785bfff0}\index{HUD@{HUD}!setPlayer1@{setPlayer1}}
+\index{setPlayer1@{setPlayer1}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{setPlayer1()}{setPlayer1()}}
+{\footnotesize\ttfamily \label{class_h_u_d_ad47d55a13d2f9fdf3bfc1e5e785bfff0} 
+void HUD\+::set\+Player1 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})}
+
+
+
+Устанавливает первого игрока. 
+
+Эта функция позволяет указать первого игрока, чьи очки будут отображаться на интерфейсе.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em player} & Указатель на объект класса \doxylink{class_player}{Player}, представляющий первого игрока. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_h_u_d_ae326f593943dc73e40b7a8717f049fc6}\index{HUD@{HUD}!setPlayer2@{setPlayer2}}
+\index{setPlayer2@{setPlayer2}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{setPlayer2()}{setPlayer2()}}
+{\footnotesize\ttfamily \label{class_h_u_d_ae326f593943dc73e40b7a8717f049fc6} 
+void HUD\+::set\+Player2 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})}
+
+
+
+Устанавливает второго игрока. 
+
+Эта функция позволяет указать второго игрока, чьи очки будут отображаться на интерфейсе.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em player} & Указатель на объект класса \doxylink{class_player}{Player}, представляющий второго игрока. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_h_u_d_ab4980bc038c389b7bfc891945b0b266c}\index{HUD@{HUD}!showMatchStats@{showMatchStats}}
+\index{showMatchStats@{showMatchStats}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{showMatchStats()}{showMatchStats()}}
+{\footnotesize\ttfamily \label{class_h_u_d_ab4980bc038c389b7bfc891945b0b266c} 
+void HUD\+::show\+Match\+Stats (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_h_u_d_a89821cafc5ef7e37b1ef9f69c8ae0302}\index{HUD@{HUD}!update@{update}}
+\index{update@{update}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_h_u_d_a89821cafc5ef7e37b1ef9f69c8ae0302} 
+void HUD\+::update (\begin{DoxyParamCaption}\item[{int}]{elapsed\+Time}{}\end{DoxyParamCaption})}
+
+
+
+Обновляет данные интерфейса на основе прошедшего времени. 
+
+Эта функция увеличивает общее время игры на заданное количество времени и обновляет очки игроков.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em elapsed\+Time} & Время, прошедшее с момента последнего обновления, которое будет добавлено к общему времени. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_h_u_d_adf77748619e66018c4f10e792bd733e5}\index{HUD@{HUD}!updateScore@{updateScore}}
+\index{updateScore@{updateScore}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{updateScore()}{updateScore()}}
+{\footnotesize\ttfamily \label{class_h_u_d_adf77748619e66018c4f10e792bd733e5} 
+void HUD\+::update\+Score (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Обновляет очки игроков. 
+
+Эта функция обновляет очки для обоих игроков, если они были установлены. 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/ui/\mbox{\hyperlink{_h_u_d_8h}{HUD.\+h}}\item 
+src/ui/\mbox{\hyperlink{_h_u_d_8cpp}{HUD.\+cpp}}\end{DoxyCompactItemize}
