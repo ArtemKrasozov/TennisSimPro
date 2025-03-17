@@ -1,3 +1,8 @@
+/**
+ * @file AIEngine.h
+ * @brief Заголовочный файл для класса AIEngine.
+ */
+
 #ifndef AIENGINE_H
 #define AIENGINE_H
 
